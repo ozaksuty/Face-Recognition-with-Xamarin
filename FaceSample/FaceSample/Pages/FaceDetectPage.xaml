@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModelBase="clr-namespace:FaceSample.ViewModels.Base;assembly=FaceSample"
+             viewModelBase:ViewModelLocator.AutoWireViewModel="true"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             x:Class="FaceSample.Pages.FaceDetectPage"
+             x:Name="DetectPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="CadetBlue"></Setter>
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Take Picture" Grid.Column="0"
+                    Grid.Row="0" Command="{Binding TakePictureCommand}" />
+            <Button Text="Pick Picture" Grid.Column="1"
+                    Grid.Row="0" Command="{Binding PickPictureCommand}" />
+            <Button Text="Config" Grid.Column="2"
+                    Grid.Row="0" Command="{Binding ConfigurationCommand}" />
+            <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
+                                        Grid.Row="1" Grid.ColumnSpan="3"
+			                            WidthRequest="300" HeightRequest="300"
+			                            DownsampleToViewSize="true"
+			                            Source="{Binding ImgSource}">
+                <ffimageloading:CachedImage.Transformations>
+                    <fftransformations:CircleTransformation />
+                </ffimageloading:CachedImage.Transformations>
+            </ffimageloading:CachedImage>
+            <Grid Grid.Row="2" Grid.ColumnSpan="3">
+                <CollectionView ItemsSource="{Binding SelectedAttributes}">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical"
+                                         Span="2" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Button Text="{Binding .}"
+                                        Command="{Binding Path=BindingContext.AttributeDetailCommand,
+                                        Source={x:Reference DetectPage}}"
+                                        CommandParameter="{Binding .}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    <CollectionView.EmptyViewTemplate>
+                        <DataTemplate>
+                            <Label Text="No Face :(" />
+                        </DataTemplate>
+                    </CollectionView.EmptyViewTemplate>
+                </CollectionView>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

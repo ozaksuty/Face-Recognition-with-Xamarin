@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModelBase="clr-namespace:FaceSample.ViewModels.Base;assembly=FaceSample"
+             viewModelBase:ViewModelLocator.AutoWireViewModel="true"
+             xmlns:converters="clr-namespace:FaceSample.Converters;assembly=FaceSample"
+             xmlns:behaviors="clr-namespace:FaceSample.Behaviors;assembly=FaceSample"
+             x:Class="FaceSample.Pages.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:SelectedItemConverter x:Key="SelectedItemConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <ListView HasUnevenRows="True"
+                      ItemsSource="{Binding Menu}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Label Text="{Binding Name}"
+                                   Grid.Row="0"
+                                   FontSize="Medium"
+                                   FontAttributes="Bold"/>
+                                <Label Text="{Binding Description}"
+                                   Grid.Row="1"
+                                   FontSize="Micro"
+                                   FontAttributes="Italic"
+                                   LineBreakMode="WordWrap"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="ItemSelected" 
+                                                      Command="{Binding SelectAPIReferenceCommand}" 
+                                                      EventArgsConverter="{StaticResource SelectedItemConverter}" />
+                </ListView.Behaviors>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

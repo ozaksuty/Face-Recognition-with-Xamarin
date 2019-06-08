@@ -1,0 +1,15 @@
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\bin\Debug\netstandard2.0\FaceSample.deps.json
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\bin\Debug\netstandard2.0\FaceSample.dll
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\bin\Debug\netstandard2.0\FaceSample.pdb
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\Pages\CustomNavigationPage.xaml.g.cs
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\Pages\FaceDetectPage.xaml.g.cs
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\Pages\MainPage.xaml.g.cs
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\FaceSample.csproj.CoreCompileInputs.cache
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\FaceSample.AssemblyInfoInputs.cache
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\FaceSample.AssemblyInfo.cs
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\FaceSample.dll
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\FaceSample.pdb
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\FaceSample.csprojAssemblyReference.cache
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample\obj\Debug\netstandard2.0\Views\ConfigurationPopupPage.xaml.g.cs

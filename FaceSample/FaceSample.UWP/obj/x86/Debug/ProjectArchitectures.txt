@@ -1,0 +1,1 @@
+C:\Users\Yigit\source\repos\FaceSample\FaceSample\FaceSample.UWP\FaceSample.UWP.csproj;x86

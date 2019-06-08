@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Acr.UserDialogs" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="Acr.UserDialogs">
+				<NamedResource name="Acr.UserDialogs.xr.xml" uri="ms-resource://Acr.UserDialogs/Files/Acr.UserDialogs/Acr.UserDialogs.xr.xml">
+					<Candidate type="Path">
+						<Value>Acr.UserDialogs\Acr.UserDialogs.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Platforms">
+					<ResourceMapSubtree name="Uwp">
+						<NamedResource name="ActionSheetContentDialog.xbf" uri="ms-resource://Acr.UserDialogs/Files/Acr.UserDialogs/Platforms/Uwp/ActionSheetContentDialog.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="DatePickerControl.xbf" uri="ms-resource://Acr.UserDialogs/Files/Acr.UserDialogs/Platforms/Uwp/DatePickerControl.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="LoginContentDialog.xbf" uri="ms-resource://Acr.UserDialogs/Files/Acr.UserDialogs/Platforms/Uwp/LoginContentDialog.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ProgressContentDialog.xbf" uri="ms-resource://Acr.UserDialogs/Files/Acr.UserDialogs/Platforms/Uwp/ProgressContentDialog.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="TimePickerControl.xbf" uri="ms-resource://Acr.UserDialogs/Files/Acr.UserDialogs/Platforms/Uwp/TimePickerControl.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
